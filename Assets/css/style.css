@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    background-color: rgb(249, 246, 246);
+}
+
+.hero_icon {
+    font-size: 70px; 
+ }
+
+ .burger {
+    font-size: 60px;
+    color: rgb(62, 6, 115);
+ }
+
+.nav_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem 0rem 1rem;
+    
+}
+
+.nav_header li {
+    display: none;
+}
+
+.nav_header a {
+    text-decoration: none;
+
+}
+
+
+.content_section {
+    padding: 5rem 10rem 0 1rem;
+    margin: 0 2rem 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.wrapper p {
+    font-size: 70px;
+    color: rgb(62, 6, 115);
+}
+
+
+
+@media screen and (min-width:678px) {
+
+    .nav_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 5rem 0rem 2rem;
+        
+    }
+
+    .nav_header li {
+        display: inline-block;
+        padding: 0 2rem 0 0;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .wrapper p {
+        font-size: 50px;
+        color: rgb(62, 6, 115);
+    }
+
+    .content_section {
+        padding: 3rem 5rem 0 4rem;
+        margin: 0 2rem 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;    
+    
+    }
+
+    .content_img {
+        background:url('/Assets/img/african-developer.jpg') no-repeat center ;
+        background-size: cover;
+        height:65vh;
+        width: 35vw;
+        border-radius: 360px;
+        transition: all 0.7s ease  ;
+    }
+    
+    .content_img:hover {
+        width:40vw ;
+        height: 70vh;
+        transition: all 0.5s ease  ;
+    }
+}
