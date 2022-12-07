@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    background-color: rgb(249, 246, 246);
+}
+
+.hero_icon {
+    font-size: 70px; 
+ }
+
+ .burger {
+    font-size: 60px;
+    color: rgb(62, 6, 115);
+ }
+
+.nav_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem 0rem 1rem;
+    
+}
+
+.nav_header li {
+    display: none;
+}
+
+.nav_header a {
+    text-decoration: none;
+
+}
+
+
+.content_section {
+    padding: 5rem 10rem 0 1rem;
+    margin: 0 2rem 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.wrapper p {
+    font-size: 70px;
+    color: rgb(62, 6, 115);
+}
+
+
+
+@media screen and (min-width:678px) {
+
+    .nav_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 5rem 0rem 2rem;
+        
+    }
+
+    .nav_header li {
+        display: inline-block;
+        padding: 0 2rem 0 0;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .wrapper p {
+        font-size: 50px;
+        color: rgb(62, 6, 115);
+        background: transparent;
+    }
+    
+    .wrapper {
+        background: transparent;
+        z-index: 2;
+    }
+
+    .content_section {
+        padding: 1rem 5rem 0 4rem;
+        margin: 0 2rem 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;    
+    
+    }
+
+    .content_img {
+        background:url('/Assets/img/african-developer.jpg') no-repeat center;
+        background-size: cover;
+        height:65vh;
+        width: 35%;
+        border-radius: 360px;
+        transition: all 0.7s ease;
+        animation:  7s infinite alternate slider ;
+        overflow: hidden;
+    }
+
+    .circle {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 30%;
+        background: rgb(214, 165, 232);
+        bottom: 0px;
+        z-index: 1;
+        left: -150px;
+    }
+    
+    .content_img:hover {
+        transform: scale(1.025);
+        cursor: pointer;
+    }
+
+    @keyframes slider {
+        from {
+            margin-left: 20%;
+          }
+        
+          to {
+            margin-left: 0%;
+          }
+    }
+    .hero_profile {
+        padding: 2rem 0 0 3rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero_text {
+        font-size: 40px;
+        width: 60%;
+        line-height: 50px;
+        
+    }
+
+    .subhero {
+        padding: 1rem 0 0 5rem;
+        width: 30%;
+        font-size: 20px;
+    }
+
+    .subhero_image {
+        width: 100%;
+        height: 50%;
+        transition: ease 0.7s;
+
+    }
+
+    .subhero_image:hover {
+        width: 109%;
+        height: 60%;
+        transition: ease 0.7s;
+    }
+
+    .subhero_text {
+        padding: 2rem 0 0 0;
+    }
+
+
+}
