@@ -100,8 +100,10 @@
 .subhero_image {
     height: 30vh;
     width: 90vw;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 1rem 0 1rem 0;
-    padding: 2rem 1rem 0 0.5rem;
+    padding: 2rem 1rem 0 0;
     justify-content: center;
 }
 
@@ -130,11 +132,9 @@ footer li {
 
 }
 
-footer {
-    /* position: absolute; */
-    /* bottom: 0px; */
+footer { 
     width: 100vw;
-    padding: 3rem 2rem 0 1rem;
+    padding: 1rem 2rem 0 1rem;
     justify-content: center;
 }
 
