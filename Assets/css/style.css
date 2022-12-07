@@ -133,6 +133,8 @@ footer li {
 }
 
 footer { 
+    position: absolute;
+    bottom: 0px;
     width: 100vw;
     padding: 1rem 2rem 0 1rem;
     justify-content: center;
