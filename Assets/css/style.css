@@ -133,7 +133,7 @@ footer li {
     list-style: none;
 
 }
-
+ 
 
 footer { 
     width: 100vw;
@@ -245,7 +245,7 @@ footer {
     }
     .hero_profile {
         margin: 0 0 4rem 0;
-        padding: 4rem 0 0 0;
+        padding: 10rem 0 0 0;
         display: flex;
         flex-direction: row;
         align-items: center;
